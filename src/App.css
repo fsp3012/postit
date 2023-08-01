@@ -1,38 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Harmattan:wght@700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  font-family: "Harmattan", sans-serif !important;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form input:focus {
+  outline: none;
+}
+form textarea:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mw1240 {
+  width: 90%;
+  max-width: 1240px;
+}
+.text-blue {
+  color: #0086b0 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.border-blue {
+  border: 1px solid #0086b0 !important;
+}
+
+.bg-blue {
+  background-color: #0086b0 !important;
+}
+.main-footer {
+  background-color: #292929;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+form img {
+  top: -10px;
+  left: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero_section {
+  background-image: url("./assets/images/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: 160% 100%;
+  padding: 50px 0;
+}
+.hero_section p {
+  width: 90%;
+  max-width: 400px;
+  line-height: 30px;
+}
+@media (min-width: 600px) {
+  .hero_section {
+    background-size: 140% 100%;
+    padding: 120px 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 765px) {
+  .hero_section {
+    background-image: url("./assets/images/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 0;
   }
+}
+@media (min-width: 1000px) {
+  .hero_section {
+    background-image: url("./assets/images/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 0;
+  }
+}
+.try-it {
+  background-image: url("./assets/images/footer-rectangle.png");
+  background-repeat: no-repeat;
+}
+input{
+  outline: none !important;
 }
